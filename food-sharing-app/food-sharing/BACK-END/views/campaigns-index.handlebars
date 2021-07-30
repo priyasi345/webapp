@@ -1,0 +1,10 @@
+<!-- views/reviews-index.handlebars -->
+
+<h1>Campaigns</h1>
+
+<a href="/campaigns/new">New Campaign</a>
+
+{{#each campaigns}}
+    <h2><a href="/campaigns/{{this._id}}">{{this.title}}</a></h2>
+    {{!-- <small>{{this.amount}}</small> --}}
+{{/each}}

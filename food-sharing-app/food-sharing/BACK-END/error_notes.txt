@@ -1,0 +1,19 @@
+Had isssue of starting mongod
+Error: 
+E STORAGE  [initandlisten] Failed to set up listener: SocketException: Address already in use
+Solution: delete old mongod.lock file, kill the previous session and restart
+Link1: https://stackoverflow.com/questions/12831939/couldnt-connect-to-server-127-0-0-127017
+Link2: https://stackoverflow.com/questions/47975929/socketexception-address-already-in-use-mongodb
+
+
+Handlebar warning:
+Error: Handlebars: Access has been denied to resolve the property "title" because it is not an "own property" of its parent.
+TODO >> Check solution: https://handlebarsjs.com/api-reference/runtime-options.html#options-to-control-prototype-access
+To avoid XSS attacks they changed some configuration.
+My solution was: npm install handlebars@4.5.3 - older version of handlebars
+since on the front end I will use react
+
+
+During Mongodb connection
+IP (192.168.4.23) whitelisting didnt work
+so in the Mongodb atlas had to "connect from anywhere"

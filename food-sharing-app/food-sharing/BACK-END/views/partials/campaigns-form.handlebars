@@ -1,0 +1,20 @@
+<fieldset>
+    <legend>{{title}}</legend>
+    <!-- TITLE -->
+    <p>
+        <label for="campaign-title">Title</label><br>
+        <input id="campaign-title" type="text" name="title" value="{{campaign.title}}"/>
+    </p>
+
+    <!-- MOVIE TITLE -->
+    <p>
+        <label for="campaign-title">Funding Goal</label><br>
+        <input id="campaign-title" type="text" name="amount" value="{{campaign.amount}}" />
+    </p>
+
+    <!-- DESCRIPTION -->
+    <p>
+        <label for="description-text">Description</label><br>
+        <textarea id="description-text" name="description" rows="10" />{{campaign.description}}</textarea>
+    </p>
+</fieldset>

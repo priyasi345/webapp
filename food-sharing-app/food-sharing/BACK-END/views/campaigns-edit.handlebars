@@ -1,0 +1,10 @@
+<!-- views/reviews-edit.handlebars -->
+
+<form method="POST" action="/campaigns/{{campaign._id}}?_method=PUT">
+    {{> campaigns-form}}
+    
+    <!-- BUTTON -->
+    <p>
+        <button type="submit">Save Campaign</button>
+    </p>
+</form>
